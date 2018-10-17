@@ -1,0 +1,7 @@
+RewriteEngine On
+DirectoryIndex index.html index.php
+
+FileETag none
+ServerSignature Off
+
+Options All -Indexes
