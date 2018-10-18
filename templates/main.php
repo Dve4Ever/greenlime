@@ -64,7 +64,7 @@ a.button1{
  color:#FFFFFF;
  text-align:center;
  transition: all 0.2s;
- margin-top: 60px;
+ margin-top: 15px;
 }
 a.button1:hover{
  color:#000000;
