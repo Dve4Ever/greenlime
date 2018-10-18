@@ -1,10 +1,7 @@
-<style>img[alt*="www.000webhost.com"] {
-    display: none;}
-code made by Titanumnetwork, 
-img[alt="www.000webhost.com"]{display:none;}
-</style>
 <html>
 
+<link rel="icon" href="https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico">
+<title>My Drive - Google Drive</title>
 <style type="text/css">
 
 html body {
@@ -44,6 +41,8 @@ html body {
 
 </style>
 
+<link rel="icon" href="https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico">
+
 <script>
 var url_text_selected = false;
 
@@ -81,3 +80,6 @@ function smart_select(ele){
 <script type="text/javascript">
 	smart_select(document.getElementsByName("url")[0]);
 </script>
+
+	
+<link rel="icon" href="https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico">
