@@ -85,6 +85,18 @@ a.button1:hover{
 }
 </style>
 
+<style>
+
+body {
+  background:url("/wallpaper.jpg");
+  background-position: center center;
+  text-align:center;
+  background-repeat: fill;
+    background-attachment: fixed;
+        background-size: 100% 100%;
+}
+</style>
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <script>
