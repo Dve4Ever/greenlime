@@ -10,7 +10,7 @@ img[alt="www.000webhost.com"]{display:none;}
 <body>
 <title>My Drive - Google Drive</title>
     <link rel="icon"
-          href="https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_4.ico">
+          href="/favicon.ico">
 
 <meta name="generator" content="php-proxy.com">
 <meta name="version" content="<?=$version;?>">
