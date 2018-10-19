@@ -169,9 +169,9 @@ function showPage() {
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
+
+
+
 <div style="text-align:left">
 <script>
 var elements = document.querySelectorAll('.discord-dialog__close-button, .discord-dialog')
