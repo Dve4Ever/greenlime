@@ -124,7 +124,7 @@ function showPage() {
 <div id="container" class="w3-animate-zoom">
 
 
-<a href="/index.html" class="button1">Go Home</a>
+<a href="/main.php" class="button1">Go Home</a>
 
 	<div style="text-align:center;">
 		<h1 style="color:#ffffff;">MikeLime's Web Proxy</h1>
