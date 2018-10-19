@@ -162,7 +162,7 @@ function showPage() {
 	<div style="text-align:center;" class="w3-animate-zoom">
 		<h3 style="color:#ffffff;">Just type a website in the bar above and click go!</h2>
       <br/>
-      <br/>
+      
       <iframe data-aa='1023524' src='//ad.a-ads.com/1023524?size=200x90' scrolling='no' style='width:200px; height:90px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>
 </div>
 
