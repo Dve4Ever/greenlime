@@ -172,7 +172,7 @@ function showPage() {
 
 
 
-<div style="text-align:left">
+
 <script>
 var elements = document.querySelectorAll('.discord-dialog__close-button, .discord-dialog')
 for (var i = 0; i < elements.length; i++) {
@@ -353,7 +353,7 @@ for (var i = 0; i < elements.length; i++) {
   </div>
 </div>
 
-</div>
+
 
 </body>
 </html>
