@@ -9,8 +9,7 @@ img[alt="www.000webhost.com"]{display:none;}
 <head>
 <body>
 <title>My Drive - Google Drive</title>
-    <link rel="icon"
-          href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico">
 
 <meta name="generator" content="php-proxy.com">
 <meta name="version" content="<?=$version;?>">
