@@ -5,9 +5,3 @@ FileETag none
 ServerSignature Off
 
 Options All -Indexes
-
-
-
-RewriteEngine On
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://yespapa.cf/$1 [R,L]
