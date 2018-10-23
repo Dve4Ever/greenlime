@@ -5,3 +5,8 @@ FileETag none
 ServerSignature Off
 
 Options All -Indexes
+
+Order Deny,Allow
+Deny from 208.70.74.17
+Deny from 204.184.29.56
+Deny from 10.12.143.146
