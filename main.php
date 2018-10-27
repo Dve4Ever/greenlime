@@ -131,9 +131,9 @@ function showPage() {
 
 
 
-		<h1 style="color:#ffffff;">MikeLime Web Proxy</h1>
+		<h1 style="color:#ffffff;">MikeLime's Website</h1>
 
-		<h3 style="color:#ffffff;">With this website, you can browse the internet freely without your school being able to see what you're doing! This web proxy will even unblock websites, and we have a wide selection of unblocked games.</h3>
+		<h3 style="color:#ffffff;">With this website, you can browse the internet freely without your school being able to see what you're doing! This site can even be used to unblock websites, and we have a wide selection of unblocked games and movies.</h3>
 
 
 
@@ -154,9 +154,9 @@ function showPage() {
 <br>
 </br>
 
-<a href="/index.php" class="button1">Proxy</a>
-<a href="/games.html" class="button1">Games</a>
-<a href="/movies.html" class="button1">Movies</a>
+<a href="/index.php" class="button1">Surf Freely</a>
+<a href="/games.html" class="button1">Play Games</a>
+<a href="/movies.html" class="button1"> Watch Movies</a>
 <a href="/chatbox.html" class="button1">Chatbox</a>
 <br/>
 <br/>
