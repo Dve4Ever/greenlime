@@ -72,7 +72,7 @@ body {
 <style>
 a.button1{
  display:inline-block;
- padding:1.5em 3.0em;
+ padding:1.4em 2.0em;
  border:0.1em solid #FFFFFF;
  margin:0 0.3em 0.3em 0;
  border-radius:0.12em;
@@ -161,7 +161,6 @@ function showPage() {
 <br/>
 <br/>
 
-<iframe data-aa='1023524' src='//ad.a-ads.com/1023524?size=200x90' scrolling='no' style='width:200px; height:90px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>
 
 
 </div>
