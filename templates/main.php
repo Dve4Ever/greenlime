@@ -127,8 +127,8 @@ function showPage() {
 <a href="/main.php" class="button1">Go Home</a>
 
 	<div style="text-align:center;">
-		<h1 style="color:#ffffff;">MikeLime's Web Proxy</h1>
-		<h3 style="color:#ffffff;">With MikeLime's free web proxy, you can browse the internet freely without your school being able to see what you're doing! This web proxy will even unblock websites, and we have a wide selection of unblocked games.</h3>
+		<h1 style="color:#ffffff;">MikeLime Surf Freely Page</h1>
+		<h3 style="color:#ffffff;">With MikeLime's surf freely page, you can browse the internet freely without your school being able to see what you're doing! our surf freely page will even unblock websites.</h3>
 	</div>
 <br/>
 <br/>
@@ -163,7 +163,7 @@ function showPage() {
 		<h3 style="color:#ffffff;">Just type a website in the bar above and click go!</h2>
      
       
-      <iframe data-aa='1023524' src='//ad.a-ads.com/1023524?size=200x90' scrolling='no' style='width:200px; height:90px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>
+      
 </div>
 
 
