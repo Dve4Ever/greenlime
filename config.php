@@ -28,7 +28,6 @@ $config['plugins'] = array(
 	'Proxify',
 	'UrlForm',
 	// site specific plugins below
-	'Youtube',
 	'DailyMotion',
 	'RedTube',
 	'XHamster',
