@@ -14,8 +14,6 @@
 	"require": {
 		"shirtjs/php-proxy": "dev-master",
 		"Athlon1600/php-proxy-plugin-bundle": "dev-master"
-		"ext-cURL": "*"
-		"ext-mbstring": "*"
 	},
 	"scripts": {
 		"post-create-project-cmd": [
