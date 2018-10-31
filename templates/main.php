@@ -124,7 +124,7 @@ function showPage() {
 <div id="container" class="w3-animate-zoom">
 
 
-<a href="/main.php" class="button1">Go Home</a>
+<a href="/" class="button1">Go Home</a>
 
 	<div style="text-align:center;">
 		<h1 style="color:#ffffff;">MikeLime Surf Freely Page</h1>
