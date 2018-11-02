@@ -55,9 +55,7 @@ html body {
 a.button1{
  display:inline-block;
  padding:1.5em 3.0em;
- border:0.22em solid #FFFFFF;
  margin:0 0.3em 0.3em 0;
- border-radius:0.12em;
  box-sizing: border-box;
  text-decoration:none;
  font-family:'Roboto',sans-serif;
@@ -66,6 +64,7 @@ a.button1{
  text-align:center;
  transition: all 0.2s;
  margin-top: 5px;
+ background-color:#9741ae;
 }
 a.button1:hover{
  color:#000000;
