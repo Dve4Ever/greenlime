@@ -55,7 +55,7 @@ html body {
 a.button1{
  display:inline-block;
  padding:1.5em 3.0em;
- border:0.1em solid #FFFFFF;
+ border:0.22em solid #FFFFFF;
  margin:0 0.3em 0.3em 0;
  border-radius:0.12em;
  box-sizing: border-box;
@@ -124,7 +124,7 @@ function showPage() {
 <div id="container" class="w3-animate-zoom">
 
 
-<a href="/" class="button1">Go Home</a>
+<a href="/" class="button1"><b>Go Home</b></a>
 
 	<div style="text-align:center;">
 		<h1 style="color:#ffffff;">MikeLime Surf Freely Page</h1>
