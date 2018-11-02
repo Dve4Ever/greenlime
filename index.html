@@ -57,21 +57,14 @@ html body {
 </style>
 
 <style>
-  .bg-image {
-    /* The image used */
-    background-image: url("/wallpaper.jpg");
-
-    /* Add the blur effect */
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+  background:url("/wallpaper.jpg");
+  background-position: center center;
+  text-align:center;
+  background-repeat: fill;
+    background-attachment: fixed;
+        background-size: 100% 100%;
+}
 </style>
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -111,22 +104,6 @@ a.button1:hover{
 }
 </style>
 
-<style>
-  .bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-  </style>
 
 <script>
 document.body.classList.add('js-loading');
@@ -141,7 +118,7 @@ function showPage() {
 
 <body>
 
-<div class="bg-image"></div>
+
 
 <div id="container" class="w3-animate-zoom">
 
@@ -154,9 +131,9 @@ function showPage() {
 
 
 
-		<h1 style="color:#ffffff;" class = "bg-text">MikeLime | Titanium Network Stealth Website</h1>
+		<h1 style="color:#ffffff;">MikeLime | Titanium Network Stealth Website</h1>
 
-		<h3 style="color:#ffffff;" class = "bg-text">With this website, you can browse the internet freely without your school being able to see what you're doing! This site can even be used to unblock websites, and we have a wide selection of unblocked games and movies.</h3>
+		<h3 style="color:#ffffff;">With this website, you can browse the internet freely without your school being able to see what you're doing! This site can even be used to unblock websites, and we have a wide selection of unblocked games and movies.</h3>
 
 
 </div>
@@ -176,10 +153,10 @@ function showPage() {
 
 <br/>
 
-<a href="/index.php" class="button1 bg-text"><b>Surf Freely</b></a>
-<a href="/games.html" class="button1 bg-text"><b>Play Games</b></a>
-<a href="/movies.html" class="button1 bg-text"><b>Watch Movies</b></a>
-<a href="/chatbox.html" class="button1 bg-text"><b>Chatbox</b></a>
+<a href="/index.php" class="button1"><b>Surf Freely</b></a>
+<a href="/games.html" class="button1"><b>Play Games</b></a>
+<a href="/movies.html" class="button1"><b>Watch Movies</b></a>
+<a href="/chatbox.html" class="button1"><b>Chatbox</b></a>
 
 </div>
 
