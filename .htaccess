@@ -20,6 +20,14 @@ RewriteEngine on
  RewriteCond %{HTTP_USER_AGENT} larbin [NC,OR]
  RewriteCond %{HTTP_USER_AGENT} heritrix [NC,OR]
  RewriteCond %{HTTP_USER_AGENT} wget [NC]
+ RewriteCond %{HTTP_USER_AGENT} AhrefsBot [NC,OR]
+ RewriteCond %{HTTP_USER_AGENT} Baiduspider [NC,OR]
+ RewriteCond %{HTTP_USER_AGENT} Ezooms [NC,OR]
+ RewriteCond %{HTTP_USER_AGENT} MJ12bot [NC,OR]
+ RewriteCond %{HTTP_USER_AGENT} YandexBot [NC,OR]
+ RewriteCond %{HTTP_USER_AGENT} Googlebot [NC,OR]
+ RewriteCond %{HTTP_USER_AGENT} Yahoo\!\ Slurp [NC,OR]
+ RewriteCond %{HTTP_USER_AGENT} bingbot [NC]
 RewriteRule !^robots\.txt$ - [F]
 
 # BLOCK BLANK USER AGENTS
