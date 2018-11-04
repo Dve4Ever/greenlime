@@ -190,7 +190,8 @@ function showPage() {
 	<div style="text-align:center;" class="element">
 		<h3 style="color:#ffffff;">Just type a website in the bar above and click go!</h2>
 
-
+<br/>
+<div id="SC_TBlock_584711" class="SC_TBlock">loading...</div>
 
 </div>
 
@@ -379,6 +380,15 @@ for (var i = 0; i < elements.length; i++) {
   </div>
 </div>
 
+<script type="text/javascript">
+    (sc_adv_out = window.sc_adv_out || []).push(
+        {
+            id : "584711",
+            domain : "n.tckn-code.com"
+        }
+    );
+</script>
+<script type="text/javascript" src="//st-n.tckn-code.com/js/a.js"></script>
 
 
 </body>
