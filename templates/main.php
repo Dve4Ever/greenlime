@@ -62,6 +62,22 @@ html body {
 </style>
 
 <style>
+  .element{
+animation:1s ease 1s normal forwards 1 fadein;
+-webkit-animation:1s ease 1s normal forwards 1 fadein;
+opacity:0
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+</style>
+
+<style>
 
 a.button1{
  display:inline-block;
@@ -108,7 +124,7 @@ body {
 }
 </style>
 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 
 <script>
 document.body.classList.add('js-loading');
@@ -133,7 +149,7 @@ function showPage() {
 
 
 
-<div id="container" class="w3-animate-zoom">
+<div id="container" class="element">
 
 
 <a href="/" class="button1"><b>Go Home</b></a>
@@ -171,7 +187,7 @@ function showPage() {
 <br/>
 <br/>
 </div>
-	<div style="text-align:center;" class="w3-animate-zoom">
+	<div style="text-align:center;" class="element">
 		<h3 style="color:#ffffff;">Just type a website in the bar above and click go!</h2>
 
 
