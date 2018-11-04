@@ -191,7 +191,7 @@ function showPage() {
 		<h3 style="color:#ffffff;">Just type a website in the bar above and click go!</h2>
 
 <br/>
-<div id="SC_TBlock_584711" class="SC_TBlock">loading...</div>
+
 
 </div>
 
