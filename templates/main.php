@@ -113,17 +113,7 @@ a.button1:hover{
 }
 </style>
 
-<style>
 
-body {
-  background:url("/wallpaper.jpg");
-  background-position: center center;
-  text-align:center;
-  background-repeat: fill;
-    background-attachment: fixed;
-        background-size: 100% 100%;
-}
-</style>
 
 
 
@@ -153,7 +143,6 @@ function showPage() {
 <div id="container" class="element">
 
 
-<a href="/" class="button1"><b>Go Home</b></a>
 
 	<div style="text-align:center;">
 		<h1 style="color:#ffffff;">MikeLime Surf Freely Page</h1>
