@@ -113,21 +113,7 @@ a.button1:hover{
 }
 </style>
 
-<style>
-.litecoin {
-  height: 59px;
-  width: 59px;
-  position: fixed;
-}
-</style>
 
-<style>
-  .litecoinbutton {
-    position: fixed;
-    bottom: 145;
-    right: 75;
-  }
-</style>
 
 
 
@@ -190,7 +176,7 @@ a.button1:hover{
 
 </div>
 
-<a href="/" class="litecoinbutton"><img class="litecoin" src="home.png"></a>
+
 
 
 </body>
