@@ -35,7 +35,7 @@ html body {
 #container {
 	width:500px;
 	margin:0 auto;
-	margin-top:135px;
+	margin-top:90px;
 }
 
 #error {
