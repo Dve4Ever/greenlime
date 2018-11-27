@@ -6,18 +6,26 @@
 	"keywords": ["php proxy application", "php proxy web", "proxy script", "php web proxy", "web proxy"],
 	"homepage": "https://www.php-proxy.com/",
 	"repositories": [
-	{
-		"type": "git",
-		"url": "https://github.com/shirtjs/php-proxy"
-        }
-    	],
+			{
+					"type": "vcs",
+					"url": "https://github.com/shirtjs/php-proxy"
+			},
+			{
+					"type": "vcs",
+					"url": "https://github.com/shirtjs/php-proxy-plugin-bundle"
+			}
+	],
 	"require": {
-		"shirtjs/php-proxy": "dev-master",
-		"Athlon1600/php-proxy-plugin-bundle": "dev-master"
+			"shirtjs/php-proxy": "dev-master",
+			"shirtjs/php-proxy-plugin-bundle": "dev-master",
+			"ext-mbstring": "^7.2",
+			"ext-gd": "^7.2",
+			"ext-sqlite3": "^7.2",
+			"ext-imagick": "*"
 	},
 	"scripts": {
-		"post-create-project-cmd": [
-			"php -f setup.txt"
-		]
+			"post-create-project-cmd": [
+					"php -f setup.txt"
+			]
 	}
 }
