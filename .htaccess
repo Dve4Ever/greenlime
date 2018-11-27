@@ -3,7 +3,7 @@ RewriteEngine on
 RewriteRule ^somestring ./ [L,R]
 
 
-DirectoryIndex index.html
+DirectoryIndex index.html index.php
 
 
 Deny from 136.228.192.0
