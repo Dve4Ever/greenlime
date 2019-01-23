@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chatbox</title>
+        <link rel="stylesheet" href="/Chatbox/public/style.css">
+    </head>
+    <body>
+        <div class="socketchatbox-page">
+
+            <div id='socketchatbox-top'>
+                <div id='socketchatbox-username'></div>
+                <div id='socketchatbox-showHideChatbox'>↓</div>
+            </div>
+            <div id='socketchatbox-body'>
+                <div class="socketchatbox-chatArea">
+                    <ul class="socketchatbox-messages"></ul>
+                </div>
+
+                <form id="socketchatbox-sendMedia">
+                    <div>
+                        <label class="socketchatbox-filebutton">
+                            Drop file above to send
+                            <input type="file" id="socketchatbox-imagefile" accept="image/*">
+                        </label>
+                    </div>
+                </form>
+
+                <input class="socketchatbox-inputMessage" placeholder="Type here..."/>
+            </div>
+
+        </div>
+
+
+    </body>
+
+    <script src="/Chatbox/public/jquery-1.9.0.min.js"></script>
+    <script src="http://mikelime.herokuapp.com/socket.io/socket.io.js"></script>
+    <script src="/Chatbox/public/client.js"></script>
+</html>
