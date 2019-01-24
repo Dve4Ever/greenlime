@@ -152,14 +152,14 @@ a.button1:hover{
 
 	<!-- I wouldn't touch this part -->
 
-		<form action="index.php" method="post" style="margin-bottom:0;">
-			<input name="url" type="text" style="width:400px;" autocomplete="off" placeholder="http://" />
-			<input type="submit" value="Go" />
-		</form>
-
-		<script type="text/javascript">
-			document.getElementsByName("url")[0].focus();
-		</script>
+  <form method="POST" action="http://unblocksit.es/" style="background:#FAFAFA;padding:20px;">
+      <label>Website address:</label>
+      <input type="text" name="url" placeholder="http://example.com/" style="width:410px; padding:2px;"></input>
+      <button type="submit">Start browsing!</button>
+    </form>
+    <p style="text-align:right;">
+      Powered by <a href="http://unblocksit.es/">Unblock Sites</a>
+  </p>
 
 	<!-- [END] -->
 
