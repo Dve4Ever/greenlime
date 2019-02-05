@@ -62,180 +62,6 @@ html body {
 </style>
 
 
-<script>
-  (function() {
-    var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
-    function(callback) {
-        window.setTimeout(callback, 1000 / 60);
-    };
-    window.requestAnimationFrame = requestAnimationFrame;
-})();
-
-
-var flakes = [],
-    canvas = document.getElementById("canvas"),
-    ctx = canvas.getContext("2d"),
-    flakeCount = 400,
-    mX = -100,
-    mY = -100
-
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-function snow() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    for (var i = 0; i < flakeCount; i++) {
-        var flake = flakes[i],
-            x = mX,
-            y = mY,
-            minDist = 150,
-            x2 = flake.x,
-            y2 = flake.y;
-
-        var dist = Math.sqrt((x2 - x) * (x2 - x) + (y2 - y) * (y2 - y)),
-            dx = x2 - x,
-            dy = y2 - y;
-
-        if (dist < minDist) {
-            var force = minDist / (dist * dist),
-                xcomp = (x - x2) / dist,
-                ycomp = (y - y2) / dist,
-                deltaV = force / 2;
-
-            flake.velX -= deltaV * xcomp;
-            flake.velY -= deltaV * ycomp;
-
-        } else {
-            flake.velX *= .98;
-            if (flake.velY <= flake.speed) {
-                flake.velY = flake.speed
-            }
-            flake.velX += Math.cos(flake.step += .05) * flake.stepSize;
-        }
-
-        ctx.fillStyle = "rgba(255,255,255," + flake.opacity + ")";
-        flake.y += flake.velY;
-        flake.x += flake.velX;
-
-        if (flake.y >= canvas.height || flake.y <= 0) {
-            reset(flake);
-        }
-
-
-        if (flake.x >= canvas.width || flake.x <= 0) {
-            reset(flake);
-        }
-
-        ctx.beginPath();
-        ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
-        ctx.fill();
-    }
-    requestAnimationFrame(snow);
-};
-
-function reset(flake) {
-    flake.x = Math.floor(Math.random() * canvas.width);
-    flake.y = 0;
-    flake.size = (Math.random() * 3) + 2;
-    flake.speed = (Math.random() * 1) + 0.5;
-    flake.velY = flake.speed;
-    flake.velX = 0;
-    flake.opacity = (Math.random() * 0.5) + 0.3;
-}
-
-function init() {
-    for (var i = 0; i < flakeCount; i++) {
-        var x = Math.floor(Math.random() * canvas.width),
-            y = Math.floor(Math.random() * canvas.height),
-            size = (Math.random() * 3) + 2,
-            speed = (Math.random() * 1) + 0.5,
-            opacity = (Math.random() * 0.5) + 0.3;
-
-        flakes.push({
-            speed: speed,
-            velY: speed,
-            velX: 0,
-            x: x,
-            y: y,
-            size: size,
-            stepSize: (Math.random()) / 30,
-            step: 0,
-            opacity: opacity
-        });
-    }
-
-    snow();
-};
-
-canvas.addEventListener("mousemove", function(e) {
-    mX = e.clientX,
-    mY = e.clientY
-});
-
-window.addEventListener("resize",function(){
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-})
-
-init();
-</script>
-
-<canvas id="canvas"></canvas>
-
-<style>
-  body {
-animation:1s ease 1s normal forwards 1 fadein;
--webkit-animation:1s ease 1s normal forwards 1 fadein;
-opacity:0
-}
-
-@keyframes fadein{from{opacity:0}
-to{opacity:1}
-}
-
-@-webkit-keyframes fadein{from{opacity:0}
-to{opacity:1}
-}
-</style>
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-<style>
-a.button1{
- display:inline-block;
- padding:1.4em 2.0em;
- margin:0 0.3em 0.3em 0;
- border-radius:0.12em;
- box-sizing: border-box;
- text-decoration:none;
- font-family:'Bookman',sans-serif;
- font-weight:300;
- color:#FFFFFF;
- text-align:center;
- transition: all 0.2s;
- background-color:#6b86f1;
- position: relative;
-}
-a.button1:hover{
- color:#000000;
- background-color:#FFFFFF;
-}
-@media all and (max-width:30em){
- a.button1{
-  display:block;
-  margin:0.4em auto;
- }
-}
-</style>
-
-<style>
-.js-loading *,
-.js-loading *:before,
-.js-loading *:after {
-  animation-play-state: paused !important;
-}
-</style>
 
 
 <script>
@@ -269,21 +95,7 @@ canvas{
 </style>
 
 
-<style>
-.litecoin {
-  height: 59px;
-  width: 59px;
-  position: fixed;
-}
-</style>
 
-<style>
-  .litecoinbutton {
-    position: fixed;
-    bottom: 145;
-    right: 75;
-  }
-</style>
 
 
 <style>
@@ -307,11 +119,10 @@ canvas{
 
 
 
-<div id="container" class="element">
 
 
 
-<div style="text-align:center;">
+
 
 
 
@@ -323,6 +134,9 @@ canvas{
 	</div>
 
 
+<div id="container" class="element">
+	
+	
 		<h1 style="color:#ffffff; position:relative;">MikeLime | Titanium Network Stealth Website</h1>
 
 
@@ -342,7 +156,6 @@ canvas{
 
 
 
-	<div style="text-align:center;">
 
 
 
