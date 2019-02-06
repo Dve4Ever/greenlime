@@ -116,25 +116,25 @@ a.button1:hover{
 
 
 <style>
-  .coolBeans {
-    border: 2px solid currentColor;
-    border-radius: 3rem;
-    color: #ff0;
-    font-family: comfort;
-    font-size: 4rem;
-    font-weight: 100;
-    overflow: hidden;
-    padding: 1rem 2rem;
-    position: relative;
-    text-decoration: none;
-    transition: 0.2s transform ease-in-out;
-    will-change: transform;
-    z-index: 0;
+
+
+
+
+  .fourth {
+  background: $yellow;
+  border-color: $yellow;
+  color: #fff;
+  background: {
+    image: linear-gradient(45deg,$yellow 50%, transparent 50%);
+    position: 100%;
+    size: 400%;
   }
-  .coolBeans:hover {
-    color: #ff0;
-    border: 2px solid currentColor;
+  transition: background 300ms ease-in-out;
+
+  &:hover {
+    background-position: 0;
   }
+}
       </style>
 
 
@@ -213,7 +213,7 @@ a.button1:hover{
 
   <br/>
 
-<a class="coolBeans" href="#">hover me</a>
+<a class="fourth" href="#">hover me</a>
 
 </div>
 
