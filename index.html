@@ -116,45 +116,38 @@ a.button1:hover{
 
 
 <style>
-  .coolBeans
-    border: 2px solid currentColor
-    border-radius: 3rem
-    color: yellow
-    font-family: roboto
-    font-size: 4rem
-    font-weight: 100
-    overflow: hidden
-    padding: 1rem 2rem
-    position: relative
-    text-decoration: none
-    transition: .2s transform ease-in-out
-    will-change: transform
-    z-index: 0
+  a.coolBeans {
+      border: 2px solid currentColor;
+      border-radius: 3rem;
+      color: #ff0;
+      font-family: roboto;
+      font-size: 4rem;
+      font-weight: 100;
+      overflow: hidden;
+      padding: 1rem 2rem;
+      position: relative;
+      text-decoration: none;
+      transition: 0.2s transform ease-in-out;
+      will-change: transform;
+      z-index: 0;
+  }
 
-    &::after
-      background-color: yellow
-      border-radius: 3rem
-      content: ''
-      display: block
-      height: 100%
-      width: 100%
-      position: absolute
-      left: 0
-      top: 0
-      transform: translate(-100%, 0) rotate(10deg)
-      transform-origin: top left
-      transition: .2s transform ease-out
-      will-change: transform
-      z-index: -1
-
-    &:hover::after
-      transform: translate(0, 0)
-
-    &:hover
-      border: 2px solid transparent
-      color: indigo
-      transform: scale(1.05)
-      will-change: transform
+  .coolBeans::after {
+    background-color: #ff0;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
       </style>
 
 
