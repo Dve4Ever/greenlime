@@ -2207,17 +2207,8 @@ h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
-h2, .h2 {
-  font-size: 1.25rem;
-  line-height: 1.4;
-  margin-top: 0;
-  margin-bottom: 0.5rem; }
 
-h3, .h3 {
-  font-size: 1.1875rem;
-  line-height: 1.4;
-  margin-top: 0;
-  margin-bottom: 0.5rem; }
+
 
 h4, .h4 {
   font-size: 1.125rem;
@@ -2242,8 +2233,7 @@ h6, .h6 {
     font-size: 3rem; }
   h2, .h2 {
     font-size: 2.5rem; }
-  h3, .h3 {
-    font-size: 1.9375rem; }
+
   h4, .h4 {
     font-size: 1.5625rem; }
   h5, .h5 {
