@@ -205,6 +205,55 @@ a.button1:hover{
   }
   </style>
 
+  <style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	ul {
+		width:100%;
+	}
+	li {
+		width:33%;
+		float:left;
+		border-right: 1px solid #eee;
+	}
+	li:last-child {
+		border-right:none;
+	}
+	li a {
+		display: block;
+		width:80%;
+		background:#ddd;
+		padding:4% 10%;
+		font-size:1.35em;
+		text-decoration: none;
+	}
+	@media screen and (max-width: px) {
+		#menu {
+			width:1.4em;
+			display: block;
+			background:#ddd;
+			font-size:1.35em;
+			text-align: center;
+		}
+		#nav.js {
+			display: none;
+		}
+		ul {
+			width:100%;
+		}
+		li {
+			width:100%;
+			border-right:none;
+		}
+	}
+	@media screen and (min-width: 497px) {
+		#menu {
+			display: none;
+		}
+	}
+	</style>
 
 
 <script>document.body.classList.add('js-loading');
@@ -225,15 +274,15 @@ function showPage() {
 
 
 
+  <div class="topFixedBar" align="right">
+  <ul id="nav">
+    <li><a href="/selection.html" class="button1">Surf Freely</a></li>
+    <li><a href="/games.html" class="button1">Play Games</a></li>
+    <li><a href="/movies.html" class="button1">Watch Movies</a></li>
+    <li><a href="/chatbox.html" class="button1">Chatbox</a></li>
+  </ul>
+</div>
 
-
-
-<div class="topFixedBar" align="right">
-<a href="/selection.html" class="button1">Surf Freely</a>
-<a href="/games.html" class="button1">Play Games</a>
-<a href="/movies.html" class="button1">Watch Movies</a>
-<a href="/chatbox.html" class="button1">Chatbox</a>
-	</div>
 
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/what-input.js"></script>
