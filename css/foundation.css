@@ -2150,7 +2150,6 @@ ul,
 ol,
 li,
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -2211,7 +2210,6 @@ h1, .h1 {
   margin-bottom: 0.5rem; }
 
 h2, .h2 {
-  font-size: 1.25rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem; }
@@ -2243,8 +2241,6 @@ h6, .h6 {
 @media print, screen and (min-width: 40em) {
   h1, .h1 {
     font-size: 3rem; }
-  h2, .h2 {
-    font-size: 2.5rem; }
   h3, .h3 {
     font-size: 1.9375rem; }
   h4, .h4 {
