@@ -1,26 +1,41 @@
-html{
+html body {
   font-family: Bookman,Bookman,sans-serif;
   font-size: 12px;
-  }
-  #container {
+}
+#container {
   margin:0 auto;
   margin-top:95px;
-  }
-  #error {
+}
+#error {
   color:red;
   font-weight:bold;
-  }
-  #frm {
+}
+#frm {
   padding:10px 15px;
   border:1px solid #ffffff;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  }
+}
   #footer {
   font-size:10px;
   margin-top:35px;
   clear:both;
+}
+
+body{margin:0;height:100%;}
+canvas {
+  position:absolute;top:0;left:0
+}
+
+body{
+  background: url('/wallpaper.jpg'),
+  linear-gradient(25deg, rgba(42, 27, 161, 0.2), rgba(255, 10, 20, 0.31) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
 a.button1{
@@ -36,10 +51,10 @@ a.button1{
   margin-top:8px;
   float:right;
 }
-  a.button1:hover{
+a.button1:hover{
   color:#4286f4;
 }
-  @media screen and (max-width:600px){
+@media screen and (max-width:600px){
   a.button1{
   display:none;
 }
@@ -49,7 +64,6 @@ a.button1{
   overflow: hidden;
   background-color: #333;
 }
-
 .topnav a {
   float: left;
   display: block;
@@ -59,21 +73,17 @@ a.button1{
   text-decoration: none;
   font-size: 17px;
 }
-
 .active {
   background-color: #4CAF50;
   color: white;
 }
-
 .topnav .icon {
   display: none;
 }
-
 .dropdown {
   float: left;
   overflow: hidden;
 }
-
 .dropdown .dropbtn {
   font-size: 31px;
   border: none;
@@ -84,7 +94,6 @@ a.button1{
   font-family: inherit;
   margin: 0;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -93,7 +102,6 @@ a.button1{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 .dropdown-content a {
   float: none;
   color: black;
@@ -102,21 +110,17 @@ a.button1{
   display: block;
   text-align: left;
 }
-
 .topnav a:hover, .dropdown:hover .dropbtn {
   background-color: #e74c3c;
   color: white;
 }
-
 .dropdown-content a:hover {
   background-color: #ddd;
   color: black;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 @media screen and (min-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
@@ -126,7 +130,6 @@ a.button1{
     display: block;
   }
 }
-
 @media screen and (min-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
@@ -146,16 +149,6 @@ a.button1{
     width: 100%;
     text-align: left;
   }
-}
-
-body {
-  background: url('/wallpaper.jpg'),
-  linear-gradient(25deg, rgba(42, 27, 161, 0.2), rgba(255, 10, 20, 0.31) 100%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
 }
 
 .btn {
@@ -234,6 +227,7 @@ body {
 }
 .fourth2:hover {
   background-position: 0;
+}
 
 .topFixedBar {
   transition: background-color .3s;
@@ -243,33 +237,33 @@ body {
   border-bottom-style: solid;
   border-bottom-color: rgba(255, 255, 255, 0.1);
   height: 67px;
-  }
+}
 
-  @font-face {
-    font-family: title;
-    src: url(autobus.ttf);
-  }
-  @font-face {
-    font-family: comfort;
-    src: url(Comfortaa.ttf);
-  }
+@font-face {
+  font-family: title;
+  src: url(autobus.ttf);
+}
+@font-face {
+  font-family: comfort;
+  src: url(Comfortaa.ttf);
+}
 
-  .text {
-    font-size: 48px;
-    font-family: title;
-    left: 45px;
-  }
+.text {
+  font-size: 48px;
+  font-family: title;
+  left: 45px;
+}
 
-  .textwidth {
-    width:40%;
-  }
-  @media (max-width:600px) {
-    .textwidth {
-    width:85%;
-  }
-  }
+.textwidth {
+  width:40%;
+}
+@media (max-width:600px) {
+.textwidth {
+  width:85%;
+}
+}
 
-  .leftText {
+.leftText {
     display:inline-block;
     margin-left:7%;
     margin-top:17px;
@@ -279,13 +273,13 @@ body {
     font-weight:700;
     font-size:20px;
     font-family:"roboto", Sans-Serif;
-  }
-   .leftText:hover, .leftText:active {
+}
+ .leftText:hover, .leftText:active {
     text-decoration: none;
     color: #FFFFFF;
-  }
-  @media (max-width:600px) {
-  .leftText {
+}
+@media (max-width:600px) {
+.leftText {
     display:none;
-  }
-  }
+}
+}
