@@ -9,4 +9,4 @@ Greenlime is meant for hosting on Heroku. Just fork this project and then connne
 
 Heres how the website looks: http://buslane.gq
 
-![If you see you cant see the photo for some reason](https://imgur.com/XhmZMdE)
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/FHD7At0"><a href="//imgur.com/FHD7At0"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
