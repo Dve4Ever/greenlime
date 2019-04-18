@@ -1,133 +1,79 @@
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
+/***************
+ * node-unblocker: Web Proxy for evading firewalls and content filters,
+ * similar to CGIProxy or PHProxy
+ *
+ *
+ * This project is hosted on github:  https://github.com/nfriedly/node-unblocker
+ *
+ * By Nathan Friedly - http://nfriedly.com
+ * Released under the terms of the GPL v3
+ */
 
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-/*
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded - callback');
-});
-*/
+var url = require('url');
+var querystring = require('querystring');
+var express = require('express');
+var unblocker = require('unblocker');
+var Transform = require('stream').Transform;
 
-/* Otherwise just put the config content (json): */
+var app = express();
 
-particlesJS('particles-js',
-  
-  {
-    "particles": {
-      "number": {
-        "value": 80,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-        "value": "#ffffff"
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
-        "image": {
-          "src": "img/github.svg",
-          "width": 100,
-          "height": 100
-        }
-      },
-      "opacity": {
-        "value": 0.5,
-        "random": false,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 5,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": true,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "enable": true,
-        "speed": 6,
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "out_mode": "out",
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": true,
-          "mode": "repulse"
-        },
-        "onclick": {
-          "enable": true,
-          "mode": "push"
-        },
-        "resize": true
-      },
-      "modes": {
-        "grab": {
-          "distance": 400,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 8,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 200
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
-      }
-    },
-    "retina_detect": true,
-    "config_demo": {
-      "hide_card": false,
-      "background_color": "#b61924",
-      "background_image": "",
-      "background_position": "50% 50%",
-      "background_repeat": "no-repeat",
-      "background_size": "cover"
+var google_analytics_id = process.env.GA_ID || null;
+
+function addGa(html) {
+    if (google_analytics_id) {
+        var ga = [
+            "<script type=\"text/javascript\">",
+            "var _gaq = []; // overwrite the existing one, if any",
+            "_gaq.push(['_setAccount', '" + google_analytics_id + "']);",
+            "_gaq.push(['_trackPageview']);",
+            "(function() {",
+            "  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;",
+            "  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';",
+            "  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);",
+            "})();",
+            "</script>"
+            ].join("\n");
+        html = html.replace("</body>", ga + "\n\n</body>");
     }
-  }
+    return html;
+}
 
-);
+function googleAnalyticsMiddleware(data) {
+    if (data.contentType == 'text/html') {
+
+        // https://nodejs.org/api/stream.html#stream_transform
+        data.stream = data.stream.pipe(new Transform({
+            decodeStrings: false,
+            transform: function(chunk, encoding, next) {
+                this.push(addGa(chunk.toString()));
+                next();
+            }
+        }));
+    }
+}
+
+var unblockerConfig = {
+    prefix: '/proxy/',
+    responseMiddleware: [
+        googleAnalyticsMiddleware
+    ]
+};
+
+
+
+// this line must appear before any express.static calls (or anything else that sends responses)
+app.use(unblocker(unblockerConfig));
+
+// serve up static files *after* the proxy is run
+app.use('/', express.static(__dirname + '/public'));
+
+// this is for users who's form actually submitted due to JS being disabled or whatever
+app.get("/no-js", function(req, res) {
+    // grab the "url" parameter from the querystring
+    var site = querystring.parse(url.parse(req.url).query).url;
+    // and redirect the user to /proxy/url
+    res.redirect(unblockerConfig.prefix + site);
+});
+
+// for compatibility with gatlin and other servers, export the app rather than passing it directly to http.createServer
+module.exports = app;
